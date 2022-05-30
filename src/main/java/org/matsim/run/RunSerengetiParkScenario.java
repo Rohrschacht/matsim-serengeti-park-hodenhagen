@@ -206,6 +206,7 @@ public final class RunSerengetiParkScenario {
 		String[] typedArgs = Arrays.copyOfRange( args, 1, args.length );
 		
 		final Config config = ConfigUtils.loadConfig( args[ 0 ], customModules );
+		config.controler().setLastIteration(10);
 		
 //		config.controler().setRoutingAlgorithmType( FastAStarLandmarks );
 				
@@ -220,4 +221,3 @@ public final class RunSerengetiParkScenario {
 	}
 
 }
-
